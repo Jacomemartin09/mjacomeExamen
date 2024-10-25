@@ -4,7 +4,9 @@
              x:Class="mjacomeExamen.VIEWS.Registro"
              Title="REGISTRO"
              >
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Spacing="25"
+        >
         <Label x:Name="UsuarioLabel"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
@@ -81,7 +83,7 @@
                 <Picker.Items>
                     <x:String>Ecuador</x:String>
                     <x:String>Estados Unidos</x:String>
-                    <x:String>XColombia</x:String>
+                    <x:String>Colombia</x:String>
                 </Picker.Items>
             </Picker>
             <Picker
@@ -157,16 +159,16 @@
             <Entry 
                 x:Name="TxtApellido"
                 Placeholder="Ingresa tu apellido"
-                Grid.Column="0"
-                Grid.Row="2"
+                Grid.Column="1"
+                Grid.Row="1"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" 
             />
             <Entry 
                 x:Name="TxtEdad"
                 Placeholder="Ingresa tu edad"
-                Grid.Column="0"
-                Grid.Row="2"
+                Grid.Column="2"
+                Grid.Row="1"
                 HorizontalOptions="Center"
                 VerticalOptions="Center" 
             />

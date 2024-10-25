@@ -4,7 +4,9 @@
              x:Class="mjacomeExamen.VIEWS.Login"
              Title="Login"
               >
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Spacing="25"
+        >
         <Label 
             Text="LOGIN"
             VerticalOptions="Center" 
