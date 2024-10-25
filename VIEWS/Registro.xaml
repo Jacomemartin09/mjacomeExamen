@@ -187,7 +187,7 @@
         </Grid>
         <Button
             x:Name="BtnCalcular"
-            Text="Calcular"
+            Text="Ver Resumen"
             HorizontalOptions="Center"
             VerticalOptions="Center"
             Clicked="BtnCalcular_Clicked"
