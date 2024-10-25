@@ -4,8 +4,10 @@
              x:Class="mjacomeExamen.VIEWS.Registro"
              Title="REGISTRO"
              >
+    <ScrollView>
     <VerticalStackLayout
         Spacing="25"
+        Margin="25"
         >
         <Label x:Name="UsuarioLabel"
                HorizontalOptions="CenterAndExpand"
@@ -20,7 +22,11 @@
             HorizontalOptions="Center"
             VerticalOptions="Center"
         />
-        <Grid>
+        <Grid
+            ColumnSpacing="25"
+            RowSpacing="25"
+            Margin="25"
+            >
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -60,12 +66,15 @@
                 HorizontalOptions="End"
                 VerticalOptions="End"
             />
-            <Label
-                Text="Pago Mensual: "
+            <Button
+                x:Name="BtnCalcularPMensual"
+                Text="Calcular Pago Mensual "
                 Grid.Column="0"
                 Grid.Row="4"
                 HorizontalOptions="End"
-                VerticalOptions="End"               
+                VerticalOptions="End"    
+                Clicked="BtnCalcularPMensual_Clicked"
+
             />
             <DatePicker
                 x:Name="pkFecha"
@@ -108,16 +117,19 @@
             />
             <Entry 
                 x:Name="TxtPagoMensual"
-                Placeholder="Monto Calculado"
                 Grid.Column="1"
                 Grid.Row="4"
                 IsEnabled="False"
-                HorizontalOptions="Center"
-                VerticalOptions="Center" 
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                TextColor="Red"
             />
 
         </Grid>
-        <Grid>
+        <Grid
+            ColumnSpacing="25"
+            RowSpacing="25"
+            Margin="25">
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
@@ -181,4 +193,5 @@
             Clicked="BtnCalcular_Clicked"
             />
     </VerticalStackLayout>
+        </ScrollView>
 </ContentPage>

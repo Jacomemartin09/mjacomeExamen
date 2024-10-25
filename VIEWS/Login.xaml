@@ -6,6 +6,7 @@
               >
     <VerticalStackLayout
         Spacing="25"
+        Margin="25"
         >
         <Label 
             Text="LOGIN"
@@ -13,6 +14,7 @@
             HorizontalOptions="Center"
             TextColor="Red"
             FontSize="20"
+            
             />
         <Image Aspect="Center" 
                HorizontalOptions="Center" 
@@ -20,7 +22,11 @@
                Source= " https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png">
             
         </Image>
-        <Grid>
+        <Grid
+            ColumnSpacing="25"
+            RowSpacing="25"
+            Margin="25"
+            >
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>

@@ -10,10 +10,10 @@ public partial class Login : ContentPage
         InitializeComponent();
 
         usuarios = new Dictionary<string, string>
-{
+        {
     { "estudiante", "moviles" },
     { "uisrael", "2024" }
-};
+        };
     }
 
 
