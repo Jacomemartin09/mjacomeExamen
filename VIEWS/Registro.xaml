@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mjacomeExamen.VIEWS.Registro"
+             Title="REGISTRO"
+             >
+    <VerticalStackLayout>
+        <Label x:Name="UsuarioLabel"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               TextColor="Black"
+               TextDecorations="Underline"    />
+
+        <Label
+            Text="Ventana de Registro"
+            TextColor="Red"
+            FontSize="25"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+        />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Fecha:"
+                Grid.Column="0"
+                Grid.Row="0"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+            />
+            <Label
+                Text="Pais:"
+                Grid.Column="0"
+                Grid.Row="1"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+            />
+            <Label
+                Text="Ciudad:"
+                Grid.Column="0"
+                Grid.Row="2"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+            />
+            <Label
+                Text="Monto Incial:"
+                Grid.Column="0"
+                Grid.Row="3"
+                HorizontalOptions="End"
+                VerticalOptions="End"
+            />
+            <Label
+                Text="Pago Mensual: "
+                Grid.Column="0"
+                Grid.Row="4"
+                HorizontalOptions="End"
+                VerticalOptions="End"               
+            />
+            <DatePicker
+                x:Name="pkFecha"
+                Grid.Column="1"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"  
+                />
+            <Picker
+                x:Name="pkPais"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" >
+                <Picker.Items>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Estados Unidos</x:String>
+                    <x:String>XColombia</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker
+                x:Name="pkCiudad"
+                Grid.Column="1"
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" >
+                <Picker.Items>
+                    <x:String>Quito</x:String>
+                    <x:String>Whasington</x:String>
+                    <x:String>Bogota</x:String>
+                </Picker.Items>
+            </Picker>
+            <Entry 
+                x:Name="TxtMontoInicial"
+                Placeholder="Ingresa el monto inicial"
+                Grid.Column="1"
+                Grid.Row="3"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+            />
+            <Entry 
+                x:Name="TxtPagoMensual"
+                Placeholder="Monto Calculado"
+                Grid.Column="1"
+                Grid.Row="4"
+                IsEnabled="False"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+            />
+
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="Nombre"
+                Grid.Column="0"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+            <Label
+                Text="Apellido"
+                Grid.Column="1"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+            <Label
+                Text="Edad"
+                Grid.Column="2"
+                Grid.Row="0"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+            <Entry 
+                x:Name="TxtNombre"
+                Placeholder="Ingresa tu nombre"
+                Grid.Column="0"
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+            />
+            <Entry 
+                x:Name="TxtApellido"
+                Placeholder="Ingresa tu apellido"
+                Grid.Column="0"
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+            />
+            <Entry 
+                x:Name="TxtEdad"
+                Placeholder="Ingresa tu edad"
+                Grid.Column="0"
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" 
+            />
+        </Grid>
+        <Button
+            x:Name="BtnCalcular"
+            Text="Calcular"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Clicked="BtnCalcular_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>

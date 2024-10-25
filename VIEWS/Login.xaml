@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mjacomeExamen.VIEWS.Login"
+             Title="Login"
+              >
+    <VerticalStackLayout>
+        <Label 
+            Text="LOGIN"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="Red"
+            FontSize="20"
+            />
+        <Image Aspect="Center" 
+               HorizontalOptions="Center" 
+               VerticalOptions="Center" 
+               Source= " https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png">
+            
+        </Image>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label
+                Text="Ingresa el usuario"
+                Grid.Column="0"
+                Grid.Row="0"
+            />
+            <Label 
+                Text="Ingresa la Contraseña"
+                Grid.Column="1"
+                Grid.Row="0"
+            />
+            <Entry
+                x:Name="TxtUsuario"
+                Placeholder="Ingresa tu usuario"
+                Grid.Column="0"
+                Grid.Row="1"
+            />
+            <Entry
+                x:Name="TxtContrasena"
+                Placeholder="Ingresa tu contraseña"
+                Grid.Column="1"
+                Grid.Row="1"
+                IsPassword="True"
+            />
+            
+        </Grid>
+        
+            <Button
+                x:Name="BtnLogin"
+                Text="Login"
+                Clicked="BtnLogin_Clicked"
+            />
+    </VerticalStackLayout>
+</ContentPage>
